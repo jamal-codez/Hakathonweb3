@@ -1,0 +1,1 @@
+web: gunicorn hakathonweb3.wsgi
