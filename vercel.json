@@ -1,5 +1,6 @@
 
 {
+  "version":2,
   "builds": [
     {
       "src": "Hakathonweb3/wsgi.py",
@@ -13,10 +14,6 @@
     }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "build_files.sh"
-    },
     {
       "src": "/(.*)",
       "dest": "Hakathonweb3/wsgi.py"
