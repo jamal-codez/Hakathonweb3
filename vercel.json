@@ -2,6 +2,11 @@
 {
   "builds": [
     {
+      "src": "Hakathonweb3/wsgi.py",
+      "use": "@vercel/python",
+      "config" : {"maxLambdaSize":"15mb", "runtime":"python3.9"}
+    },
+    {
       "src": "build_files.sh",
       "use": "@vercel/static-build",
       "config": { "distDir": "staticfiles" }
@@ -11,6 +16,14 @@
     {
       "src": "/(.*)",
       "dest": "build_files.sh"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "Hakathonweb3/wsgi.py"
+    },
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
     }
   ]
 }
