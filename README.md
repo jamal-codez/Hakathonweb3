@@ -1,3 +1,12 @@
+HAKATHON WEB3 PYTHON BACKEND.
+
+Authors:
+1. https://github.com/jamal-codez/
+2. https://github.com/EddieMujafar
+
+
+
+   ### SAMPLE DOCUMENTATION
 ### Log in
 
 ```http
